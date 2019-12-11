@@ -6,9 +6,10 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'auth', loadChildren: './auth/auth.module#AuthPageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
-  { path: 'target', loadChildren: './target/target.module#TargetPageModule' },
   { path: 'my-post', loadChildren: './my-post/my-post.module#MyPostPageModule' },
   { path: 'about-us', loadChildren: './about-us/about-us.module#AboutUsPageModule' },
+  { path: 'savepost', loadChildren: './savepost/savepost.module#SavepostPageModule' },
+  { path: 'new-mypost', loadChildren: './my-post/new-mypost/new-mypost.module#NewMypostPageModule' },
 ];
 
 @NgModule({
